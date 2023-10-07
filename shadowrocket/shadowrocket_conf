@@ -71,7 +71,7 @@ TikTok = select,PROXY,interval=86400,timeout=5,select=0,url=http://www.gstatic.c
 DouYin = select,DIRECT,PROXY,interval=86400,timeout=5,select=0,url=http://www.gstatic.com/generate_204
 Speedtest = select,DIRECT,PROXY,interval=86400,timeout=5,select=0,url=http://www.gstatic.com/generate_204
 Select = select,PROXY,DIRECT,interval=86400,timeout=5,select=0,url=http://www.gstatic.com/generate_204
-OpenAI = select,policy-regex-filter=OpenAI,interval=86400,timeout=5,select=0,url=http://www.gstatic.com/generate_204
+OpenAI = select,policy-regex-filter=OpenAI,interval=86400,timeout=5,select=1,url=http://www.gstatic.com/generate_204
 Proxy = select,Proxy,interval=86400,timeout=5,select=0,url=http://www.gstatic.com/generate_204
 Default = select,DIRECT,PROXY,select=0
 
