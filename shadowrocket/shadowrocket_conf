@@ -71,9 +71,10 @@ TikTok = select,PROXY,interval=86400,timeout=5,select=0,url=http://www.gstatic.c
 DouYin = select,DIRECT,PROXY,interval=86400,timeout=5,select=0,url=http://www.gstatic.com/generate_204
 Speedtest = select,DIRECT,PROXY,interval=86400,timeout=5,select=0,url=http://www.gstatic.com/generate_204
 Select = select,PROXY,DIRECT,interval=86400,timeout=5,select=0,url=http://www.gstatic.com/generate_204
-OpenAI = select,PROXY,interval=86400,timeout=5,select=0,url=http://www.gstatic.com/generate_204
-Proxy = select,PROXY,interval=86400,timeout=5,select=0,url=http://www.gstatic.com/generate_204
+OpenAI = select,OpenAI,PROXY,interval=86400,timeout=5,select=0,url=http://www.gstatic.com/generate_204
+Proxy = select,policy-regex-filter=OpenAI,interval=86400,timeout=5,select=0,url=http://www.gstatic.com/generate_204
 Default = select,DIRECT,PROXY,select=0
+
 [Rule]
 # 规则类型：
 # DOMAIN-SUFFIX：匹配请求域名的后缀。如“DOMAIN-SUFFIX,example.com,DIRECT”可以匹配到“a.example.com、a.b.example.com”。
