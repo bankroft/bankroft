@@ -117,9 +117,9 @@ RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/r
 # 本地局域网地址的规则集。
 RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/Lan/Lan.list,DIRECT
 # 直连策略的修正规则集。
-RULE-SET,https://gist.githubusercontent.com/bankroft/59aea9b9e08b2558e1973b22519e8eed/raw/6d3f127bc01a54f4efac37e7a3f4d36fab9a848b/direct.amend,DIRECT
+RULE-SET,https://raw.githubusercontent.com/bankroft/bankroft/master/shadowrocket/direct.amend,DIRECT
 # 代理策略的修正规则集。
-RULE-SET,https://gist.githubusercontent.com/bankroft/59aea9b9e08b2558e1973b22519e8eed/raw/6d3f127bc01a54f4efac37e7a3f4d36fab9a848b/proxy.amend,PROXY
+RULE-SET,https://raw.githubusercontent.com/bankroft/bankroft/master/shadowrocket/proxy.amend,PROXY
 RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Apple/Apple.list,Apple
 RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/Netflix/Netflix.list,Netflix
 RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/PayPal/PayPal.list,Paypal
