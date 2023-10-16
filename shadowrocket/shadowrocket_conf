@@ -110,14 +110,19 @@ Default = select,DIRECT,PROXY,select=0
 # 规则匹配的优先级：
 # 1.规则从上到下依次匹配。
 # 2.域名规则优先于IP规则。
-# ----------
-RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/Advertising/Advertising.list,REJECT
+# -------------
+
 # 本地局域网地址的规则集。
 RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/Lan/Lan.list,DIRECT
 # 直连策略的修正规则集。
 RULE-SET,https://raw.githubusercontent.com/bankroft/bankroft/master/shadowrocket/direct.amend,DIRECT
 # 代理策略的修正规则集。
 RULE-SET,https://raw.githubusercontent.com/bankroft/bankroft/master/shadowrocket/proxy.amend,PROXY
+
+# Advertising
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/AdvertisingLite/AdvertisingLite.list,REJECT
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/AdvertisingLite/AdvertisingLite_Domain.list,REJECT
+
 RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Apple/Apple.list,Apple
 RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/Netflix/Netflix.list,Netflix
 RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/PayPal/PayPal.list,Paypal
