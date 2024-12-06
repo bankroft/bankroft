@@ -73,6 +73,7 @@ Speedtest = select,DIRECT,PROXY,interval=86400,timeout=5,select=0,url=http://www
 Select = select,PROXY,DIRECT,interval=86400,timeout=5,select=0,url=http://www.gstatic.com/generate_204
 OpenAI = select,PROXY,interval=86400,timeout=5,select=1,url=http://www.gstatic.com/generate_204
 Proxy = select,Proxy,interval=86400,timeout=5,select=0,url=http://www.gstatic.com/generate_204
+Ad = select,REJECT,DIRECT
 Default = select,DIRECT,PROXY,select=0
 
 [Rule]
