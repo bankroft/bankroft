@@ -69,6 +69,7 @@ PayPal = select,DIRECT,PROXY,interval=86400,timeout=5,select=0,url=http://www.gs
 Netflix = select,PROXY,interval=86400,timeout=5,select=0,url=http://www.gstatic.com/generate_204
 TikTok = select,PROXY,interval=86400,timeout=5,select=0,url=http://www.gstatic.com/generate_204
 DouYin = select,DIRECT,PROXY,interval=86400,timeout=5,select=0,url=http://www.gstatic.com/generate_204
+XiaoHongShu = select,DIRECT,PROXY,interval=86400,timeout=5,select=0,url=http://www.gstatic.com/generate_204
 Speedtest = select,DIRECT,PROXY,interval=86400,timeout=5,select=0,url=http://www.gstatic.com/generate_204
 Select = select,PROXY,DIRECT,interval=86400,timeout=5,select=0,url=http://www.gstatic.com/generate_204
 OpenAI = select,PROXY,interval=86400,timeout=5,select=1,url=http://www.gstatic.com/generate_204
@@ -139,6 +140,8 @@ RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/r
 # Tiktok
 RULE-SET,https://raw.githubusercontent.com/Semporia/TikTok-Unlock/master/Shadowrocket/TikTok.list,TikTok
 RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/DouYin/DouYin.list,DouYin
+# 小红书
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/XiaoHongShu/XiaoHongShu.list,XiaoHongShu
 # Twitch
 RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/Twitch/Twitch.list,Proxy
 # Speedtest
