@@ -119,6 +119,8 @@ RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/r
 RULE-SET,https://raw.githubusercontent.com/bankroft/bankroft/master/shadowrocket/direct.amend,DIRECT
 # 代理策略的修正规则集。
 RULE-SET,https://raw.githubusercontent.com/bankroft/bankroft/master/shadowrocket/proxy.amend,PROXY
+# 拒绝策略的修正规则集
+RULE-SET,https://raw.githubusercontent.com/bankroft/bankroft/master/shadowrocket/reject.amend,REJECT
 
 # Advertising
 RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/AdvertisingLite/AdvertisingLite.list,Ad
