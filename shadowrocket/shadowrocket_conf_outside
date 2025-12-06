@@ -16,7 +16,7 @@ udp-policy-not-supported-behaviour = REJECT
 
 [Proxy Group]
 Home-Master = select, Home-Auto, Home-WG
-Home-Auto = fallback, Home-IPv4, Home-IPv6, interval=86400, timeout=3, url=http://www.qq.com
+Home-Auto = fallback, Home-IPv4, Home-IPv6, interval=86400, timeout=300, url=http://www.qq.com
 
 Apple = select,DIRECT,PROXY,interval=86400,timeout=5,select=0,url=http://www.gstatic.com/generate_204
 Microsoft = select,DIRECT,PROXY,interval=86400,timeout=5,select=0,url=http://www.gstatic.com/generate_204
