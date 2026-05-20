@@ -84,4 +84,5 @@ localhost = 127.0.0.1
 [Script]
 
 [MITM]
+h2 = true
 hostname = google.cn,*.google.cn
