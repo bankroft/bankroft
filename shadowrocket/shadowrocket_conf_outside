@@ -21,15 +21,11 @@ Home-Auto = fallback, Home-IPv4, Home-IPv6, interval=86400, timeout=300, url=htt
 Apple = select,DIRECT,PROXY,interval=86400,timeout=5,select=0,url=http://www.gstatic.com/generate_204
 Microsoft = select,DIRECT,PROXY,interval=86400,timeout=5,select=0,url=http://www.gstatic.com/generate_204
 PayPal = select,DIRECT,PROXY,interval=86400,timeout=5,select=0,url=http://www.gstatic.com/generate_204
-Netflix = select,PROXY,interval=86400,timeout=5,select=0,url=http://www.gstatic.com/generate_204
 TikTok = select,PROXY,interval=86400,timeout=5,select=0,url=http://www.gstatic.com/generate_204
 DouYin = select,DIRECT,PROXY,interval=86400,timeout=5,select=0,url=http://www.gstatic.com/generate_204
 XiaoHongShu = select,DIRECT,PROXY,interval=86400,timeout=5,select=0,url=http://www.gstatic.com/generate_204
 Speedtest = select,DIRECT,PROXY,interval=86400,timeout=5,select=0,url=http://www.gstatic.com/generate_204
-Select = select,PROXY,DIRECT,interval=86400,timeout=5,select=0,url=http://www.gstatic.com/generate_204
-OpenAI = select,PROXY,interval=86400,timeout=5,select=1,url=http://www.gstatic.com/generate_204
 Proxy = select,Proxy,interval=86400,timeout=5,select=0,url=http://www.gstatic.com/generate_204
-Ad = select,REJECT,DIRECT
 Default = select,DIRECT,PROXY,select=0
 
 [Rule]
@@ -43,43 +39,36 @@ RULE-SET,https://raw.githubusercontent.com/bankroft/bankroft/master/shadowrocket
 # 拒绝策略的修正规则集
 RULE-SET,https://raw.githubusercontent.com/bankroft/bankroft/master/shadowrocket/reject.amend,REJECT
 
-# Advertising
-RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/AdvertisingLite/AdvertisingLite.list,Ad
-RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/AdvertisingLite/AdvertisingLite_Domain.list,Ad
-
 RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Apple/Apple.list,Apple
-RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/Netflix/Netflix.list,Netflix
 RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/PayPal/PayPal.list,Paypal
-RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/OpenAI/OpenAI.list,OpenAI
-# Game
-RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/Nintendo/Nintendo.list,Select
-RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/Epic/Epic.list,Select
-RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/Steam/Steam.list,Proxy
+
 # Microsoft
 RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/Microsoft/Microsoft.list,Microsoft
 RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/OneDrive/OneDrive.list,Microsoft
-RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/GitHub/GitHub.list,Proxy
+
 # Tiktok
 RULE-SET,https://raw.githubusercontent.com/Semporia/TikTok-Unlock/master/Shadowrocket/TikTok.list,TikTok
 RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/DouYin/DouYin.list,DouYin
+
 # 小红书
 RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/XiaoHongShu/XiaoHongShu.list,XiaoHongShu
-# Twitch
-RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/Twitch/Twitch.list,Proxy
+
 # Speedtest
-RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/Speedtest/Speedtest.list,Speedtest
-# Google
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/Speedtest/Speedtest.list,Speedtest 
+
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/Netflix/Netflix.list,Proxy
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/Epic/Epic.list,Proxy
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/Steam/Steam.list,Proxy 
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/GitHub/GitHub.list,Proxy 
 RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/Google/Google.list,Proxy
 RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/GoogleDrive/GoogleDrive.list,Proxy
 RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/YouTube/YouTube.list,Proxy
-# Twitter
 RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/Twitter/Twitter.list,Proxy
-# Instagram
 RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/Instagram/Instagram.list,Proxy
-# Telegram
 RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/Telegram/Telegram.list,Proxy
-#Reddit
 RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/Reddit/Reddit.list,Proxy
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/OpenAI/OpenAI.list,Proxy
+
 FINAL,Default
 
 [Host]
